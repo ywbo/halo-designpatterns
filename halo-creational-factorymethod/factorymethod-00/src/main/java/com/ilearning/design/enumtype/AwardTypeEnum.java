@@ -1,4 +1,4 @@
-package com.ilearning.design;
+package com.ilearning.design.enumtype;
 
 /**
  * 奖励枚举类
@@ -25,7 +25,7 @@ public enum AwardTypeEnum {
     /**
      * 枚举状态值
      */
-    private Integer envState;
+    private final Integer envState;
 
     public Integer getEnvState() {
         return envState;

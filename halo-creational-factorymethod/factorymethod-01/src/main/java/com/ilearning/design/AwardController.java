@@ -9,7 +9,7 @@ import com.ilearning.design.goods.GoodsService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import static com.ilearning.design.AwardTypeEnum.*;
+import static com.ilearning.design.enumtype.AwardTypeEnum.*;
 
 /**
  * 奖励业务了逻辑处理
@@ -21,7 +21,7 @@ public class AwardController {
     /**
      * 日志
      */
-    private Logger logger = LoggerFactory.getLogger(AwardController.class);
+    private final Logger logger = LoggerFactory.getLogger(AwardController.class);
 
     public AwardRes getAwrad2User(AwardReq req){
         String reqJson = JSON.toJSONString(req);
@@ -29,7 +29,7 @@ public class AwardController {
         logger.debug("奖品开始发放啦{}。req:{}", req.getUId(), reqJson);
         // 按照不同类型方法商品[1优惠券、2实物商品、3第三方兑换卡(爱奇艺)]
         try {
-            if (COUPON.getEnvState() == req.getAwardType()){
+            if (COUPON.getEnvState().equals(req.getAwardType())){
                 CouponService couponService = new CouponService();
                 CouponResult couponResult = couponService.sendCoupon(req.getUId(), req.getAwardNumber(), req.getBizId());
                 if ("0000".equals(couponResult.getCode())) {
@@ -37,7 +37,7 @@ public class AwardController {
                 } else {
                     awardRes = new AwardRes("0001", couponResult.getInfo());
                 }
-            } else if (GOODS.getEnvState() == req.getAwardType()){
+            } else if (GOODS.getEnvState().equals(req.getAwardType())){
                 GoodsService goodsService = new GoodsService();
                 DeliverReq deliverReq = new DeliverReq();
                 deliverReq.setUserName(queryUserName(req.getUId()));
@@ -53,7 +53,7 @@ public class AwardController {
                 } else {
                     awardRes = new AwardRes("0001", "发放失败");
                 }
-            } else if (CARD.getEnvState() == req.getAwardType()) {
+            } else if (CARD.getEnvState().equals(req.getAwardType())) {
                 String bindMobileNumber = queryUserPhoneNumber(req.getUId());
                 IQiYiCardService iQiYiCardService = new IQiYiCardService();
                 iQiYiCardService.grantToken(bindMobileNumber, req.getAwardNumber());

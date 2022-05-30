@@ -9,13 +9,12 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>halo-creational-factorymethod</artifactId>
+    <artifactId>halo-creational-abstractfactory</artifactId>
     <packaging>pom</packaging>
-    <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>factorymethod-00</module>
-        <module>factorymethod-01</module>
-        <module>factorymethod-02</module>
+        <module>abstractfactory-00</module>
+        <module>abstractfactory-01</module>
+        <module>abstractfactory-02</module>
     </modules>
 
     <properties>
@@ -30,5 +29,5 @@
             <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
-    
+
 </project>

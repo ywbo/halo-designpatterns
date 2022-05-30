@@ -19,6 +19,8 @@
     <!-- 模块管理 -->
     <modules>
         <module>halo-creational-factorymethod</module>
+        <module>halo-creational-abstractfactory</module>
+        <module>halo-designpattern-common</module>
     </modules>
 
     <dependencies>

@@ -23,6 +23,7 @@
         <module>halo-designpattern-common</module>
         <module>halo-creational-buildermodel</module>
         <module>halo-creational-singleton</module>
+        <module>halo-structure-adapter</module>
     </modules>
 
     <dependencies>

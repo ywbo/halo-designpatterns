@@ -51,5 +51,6 @@ Building Construction）中描述了一些常见的建筑设计问题，并提�
 ----
 资料参考：
 
+- [免费在线学习代码重构](https://refactoringguru.cn/)
 - [itstack-demo-design](https://github.com/fuzhengwei/itstack-demo-design)
 - [软件设计模式](http://c.biancheng.net/view/1317.html)

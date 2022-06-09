@@ -12,7 +12,6 @@
     <artifactId>halo-structure-bridging</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>bridging-00</module>
         <module>bridging-01</module>
         <module>bridging-02</module>
     </modules>

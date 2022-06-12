@@ -22,11 +22,11 @@ public class ApiTest {
 
     @Test
     public void test_pay() {
-        logger.info("模拟微信支付，支付方式为：微信支付 + 指纹支付。");
+        logger.info("\r\n 模拟微信支付，支付方式为：微信支付 + 指纹支付。");
         WxPay wxPay = new WxPay(new PayFingerprint());
         wxPay.transfer("wx_123098", "10001123", new BigDecimal(100));
 
-        logger.info("模拟支付宝支付，方式为：支付宝支付 + 刷脸支付。");
+        logger.info("\r\n 模拟支付宝支付，方式为：支付宝支付 + 刷脸支付。");
         ZfbPay zfbPay = new ZfbPay(new PayFace());
         zfbPay.transfer("zfb_456098", "10001456", new BigDecimal(200));
     }

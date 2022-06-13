@@ -25,6 +25,7 @@
         <module>halo-creational-singleton</module>
         <module>halo-structure-adapter</module>
         <module>halo-structure-bridging</module>
+        <module>halo-structure-combination</module>
     </modules>
 
     <dependencies>

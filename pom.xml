@@ -26,6 +26,7 @@
         <module>halo-structure-adapter</module>
         <module>halo-structure-bridging</module>
         <module>halo-structure-combination</module>
+        <module>halo-structure-decorator</module>
     </modules>
 
     <dependencies>

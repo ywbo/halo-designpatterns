@@ -27,6 +27,7 @@
         <module>halo-structure-bridging</module>
         <module>halo-structure-combination</module>
         <module>halo-structure-decorator</module>
+        <module>halo-structure-facade</module>
     </modules>
 
     <dependencies>

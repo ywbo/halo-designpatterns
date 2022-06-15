@@ -1,0 +1,12 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: springboot-halofacade-door
+
+# 自定义中间件配置
+halo:
+  door:
+    enbale: true
+    userStr: 1001,aaa,vvv #白名单用户ID，多个逗号隔开

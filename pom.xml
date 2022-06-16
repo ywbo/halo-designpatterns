@@ -28,6 +28,7 @@
         <module>halo-structure-combination</module>
         <module>halo-structure-decorator</module>
         <module>halo-structure-facade</module>
+        <module>halo-structure-flyweight</module>
     </modules>
 
     <dependencies>

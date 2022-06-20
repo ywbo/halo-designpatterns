@@ -30,6 +30,7 @@
         <module>halo-structure-facade</module>
         <module>halo-structure-flyweight</module>
         <module>halo-structure-proxy</module>
+        <module>halo-behavior-responsibilityChain</module>
     </modules>
 
     <dependencies>

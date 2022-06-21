@@ -31,6 +31,7 @@
         <module>halo-structure-flyweight</module>
         <module>halo-structure-proxy</module>
         <module>halo-behavior-responsibilityChain</module>
+        <module>halo-behavior-command</module>
     </modules>
 
     <dependencies>

@@ -46,4 +46,20 @@ public class ApiTest {
         logger.info("测试结果：{}", JSON.toJSONString(authLink.doAuth("halo_1", "1000998004813441", new Date())));
 
     }
+
+    /**
+     * 【补充】与当前设计模式无关
+     * jdk 底层对 “java” 做了运行时常量池化处理，故 str2 == str2.intern() 输出为false。
+     */
+    @Test
+    public void test_str() {
+        String str1 = new StringBuffer("a").append("li").toString();
+        System.out.println(str1);
+        System.out.println(str1.intern());
+        System.out.println(str1 == str1.intern());
+        String str2 = new StringBuffer("Ja").append("va").toString();
+        System.out.println(str2);
+        System.out.println(str2.intern());
+        System.out.println(str2 == str2.intern());
+    }
 }

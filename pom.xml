@@ -33,6 +33,7 @@
         <module>halo-behavior-responsibilityChain</module>
         <module>halo-behavior-command</module>
         <module>halo-behavior-Iterator</module>
+        <module>halo-behavior-Intermediary</module>
     </modules>
 
     <dependencies>

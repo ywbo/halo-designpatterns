@@ -34,6 +34,7 @@
         <module>halo-behavior-command</module>
         <module>halo-behavior-Iterator</module>
         <module>halo-behavior-Intermediary</module>
+        <module>halo-behavior-memento</module>
     </modules>
 
     <dependencies>

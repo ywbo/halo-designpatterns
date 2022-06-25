@@ -5,16 +5,16 @@ import lombok.Data;
 import java.util.Date;
 
 /**
- * 用户信息
+ * 部门
  *
  * @author yuwenbo
- * @date 2022/6/23 6:37
+ * @date 2022/6/25 15:33
  **/
 @Data
-public class User {
+public class Department {
     private Integer id;
     private String name;
-    private Integer age;
+    private String address;
     private Date createTime;
     private Date updateTime;
 }

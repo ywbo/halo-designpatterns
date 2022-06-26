@@ -1,5 +1,7 @@
 package com.ilearning.design.event.listener;
 
+import com.ilearning.design.LotteryResult;
+
 /**
  * 事件监听器
  *
@@ -8,5 +10,6 @@ package com.ilearning.design.event.listener;
  **/
 public interface EventListener {
 
+    void doEvent(LotteryResult result);
 
 }

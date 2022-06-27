@@ -37,6 +37,7 @@
         <module>halo-behavior-memento</module>
         <module>halo-behavior-Observer</module>
         <module>halo-behavior-state</module>
+        <module>halo-behavior-strategy</module>
     </modules>
 
     <dependencies>

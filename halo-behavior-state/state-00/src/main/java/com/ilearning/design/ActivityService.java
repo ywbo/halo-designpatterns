@@ -7,7 +7,7 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
- * 营销活动服务
+ * 营销活动服务接口
  *
  * @author yuwenbo
  * @date 2022/6/27 6:58
@@ -16,7 +16,7 @@ public class ActivityService {
 
     private static Map<String, Enum<StateEnum>> stateMap = new ConcurrentHashMap<>();
 
-    public void init(String activityId, Enum<StateEnum> status) {
+    public static void init(String activityId, Enum<StateEnum> status) {
         // 模拟查询活动信息
         ActivityInfo activityInfo = new ActivityInfo();
         activityInfo.setActivityId(activityId);

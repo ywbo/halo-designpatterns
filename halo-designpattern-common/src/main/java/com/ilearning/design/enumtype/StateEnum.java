@@ -42,13 +42,13 @@ public enum StateEnum {
      */
     OPEN(7);
 
-    private int state;
+    private int status;
 
-    public int getState() {
-        return state;
+    public int getStatus() {
+        return status;
     }
 
-    StateEnum(int state) {
-        this.state = state;
+    StateEnum(int status) {
+        this.status = status;
     }
 }

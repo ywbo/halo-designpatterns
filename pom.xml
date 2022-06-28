@@ -38,6 +38,7 @@
         <module>halo-behavior-Observer</module>
         <module>halo-behavior-state</module>
         <module>halo-behavior-strategy</module>
+        <module>halo-behavior-templatemethod</module>
     </modules>
 
     <dependencies>

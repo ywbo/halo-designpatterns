@@ -37,13 +37,48 @@
 
 设计模式大体概括为：创建型模式（creational），结构型模式（structure），行为型模式（behavior）三类。每种大的分类下又有好几种具体的模式。
 
-halo-creational-factorymethod -- 创建型模式的工厂方法模式项目工程 │ ├─docs -- 该设计模式概念，以及与其他设计的区别与联系 │ ├─factorymethod-00 --
-xxxx-00：子模块，代表里面的类或者方法可能是xxxx-01模块，xxxx-02模块通用的，所以将其提出成公共部分 │ │ ├─src │ │ ├─main │ │ │ └─java │ │ │ └─com │ │ │
-└─ilearning │ │ │ └─design │ │ │ ├─card │ │ │ ├─coupon │ │ │ └─goods │ │ └─test -- 单元测试 │ │ └─java │ ├─factorymethod-01
--- xxxx-01：没有使用【工厂方法设计模式】的代码实现，以便于和使用了设计模式的代码子模块产生对比学习，加深理解 │ │ ├─src │ │ ├─main │ │ │ └─java │ │ │ └─com │ │ │
-└─ilearning │ │ │ └─design │ │ └─test -- 单元测试 │ │ └─java │ │ └─com │ │ └─ilearning │ │ └─design │ │ └─test │
-└─factorymethod-02 -- xxxx-02：使用【工厂方法设计模式】的代码实现，以便于和使用了设计模式的代码子模块产生对比学习，加深理解 │ ├─src │ ├─main │ │ └─java │ │ └─com │ │
-└─ilearning │ │ └─design │ │ └─commodity │ │ └─impl │ └─test -- 单元测试 │ └─java │ └─com │ └─ilearning │ └─design │ └─test
+halo-creational-factorymethod    -- 创建型模式的工厂方法模式项目工程
+│  ├─docs           -- 该设计模式概念，以及与其他设计的区别与联系
+│  ├─factorymethod-00           -- xxxx-00：子模块，代表里面的类或者方法可能是xxxx-01模块，xxxx-02模块通用的，所以将其提出成公共部分
+│  │  ├─src
+│  │     ├─main
+│  │     │  └─java
+│  │     │      └─com
+│  │     │          └─ilearning
+│  │     │              └─design
+│  │     │                  ├─card
+│  │     │                  ├─coupon
+│  │     │                  └─goods
+│  │     └─test    -- 单元测试
+│  │         └─java
+│  ├─factorymethod-01          -- xxxx-01：没有使用【工厂方法设计模式】的代码实现，以便于和使用了设计模式的代码子模块产生对比学习，加深理解
+│  │  ├─src
+│  │     ├─main
+│  │     │  └─java
+│  │     │      └─com
+│  │     │          └─ilearning
+│  │     │              └─design
+│  │     └─test          -- 单元测试
+│  │         └─java
+│  │             └─com
+│  │                 └─ilearning
+│  │                     └─design
+│  │                         └─test
+│  └─factorymethod-02          -- xxxx-02：使用【工厂方法设计模式】的代码实现，以便于和使用了设计模式的代码子模块产生对比学习，加深理解
+│      ├─src
+│         ├─main
+│         │  └─java
+│         │      └─com
+│         │          └─ilearning
+│         │              └─design
+│         │                  └─commodity
+│         │                      └─impl
+│         └─test          -- 单元测试
+│             └─java
+│                 └─com
+│                     └─ilearning
+│                         └─design
+│                             └─test
 
 
 

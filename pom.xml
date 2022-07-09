@@ -5,10 +5,10 @@
     <packaging>pom</packaging>
 
     <groupId>com.ilearning</groupId>
-    <artifactId>DesignPattern</artifactId>
+    <artifactId>halo-designpatterns</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>DesignPattern</name>
-    <description>DesignPattern</description>
+    <name>halo-designpatterns</name>
+    <description>halo-designpatterns</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

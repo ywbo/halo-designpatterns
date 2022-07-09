@@ -47,6 +47,10 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <!-- “取消生成可执行jar”，这里如果不配置，那么在 mvn install 时会报错，原因在于引用 faced-00 模块 domain下的 UserInfo 时，生成的可执行jar中没有。  -->
+                <configuration>
+                    <skip>true</skip>
+                </configuration>
             </plugin>
         </plugins>
     </build>

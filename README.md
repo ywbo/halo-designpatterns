@@ -37,7 +37,7 @@
 
 设计模式大体概括为：创建型模式（creational），结构型模式（structure），行为型模式（behavior）三类。每种大的分类下又有好几种具体的模式。
 
-![目录结构说明](README.assets/structure.png)
+![目录结构说明](README.assets/xxx-module-structure.png)
 
 ----
 
